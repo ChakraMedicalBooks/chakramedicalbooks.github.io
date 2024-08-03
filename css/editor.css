@@ -37,6 +37,7 @@
 	color: white;
     font-size: 20px;
 }
+
 .rce-countdown-wrap{
 	justify-content: flex-start;
 }
@@ -327,7 +328,7 @@
 }
 .rce-sections-item iframe{
     width: 1280px;
-    transform: scale(0.2109375);
+    transform: scale(0.179);
     transform-origin: left top;
 }
 .mCSB_dragger_bar{
@@ -2553,7 +2554,8 @@ div.rce-style-item-content{
  
 .ci-menu-edit-action-wrap{
 	position: fixed;
-	left: 285px;
+	left: unset;
+	right: 50px;
 	top: 0px;
 	background-color: white;
 	padding: 10px;
@@ -3002,4 +3004,50 @@ div.rce-style-item-content{
 
 .rce-accordion-title > div[contenteditable="true"] {
 	width: 100%;
+}
+
+.ci-sidebar-item .font-select .fs-drop{
+    left: unset;
+    position: fixed;
+    top: unset;
+    right: 250px;
+    border-radius: 5px;
+    border: 0px;
+    width: 260px !important;
+    padding: 10px 17px !important;
+    box-shadow: 0px 2px 6px 0px #00000029, 0px 2px 10px 0px #00000014;
+
+}
+.font-search-wrap{
+	width: 100% !important;
+    margin: 10px 0px !important;
+    border: 1px solid #F2F2F2 !important;
+    background-color: #FAFAFA !important;
+    padding: 0px 10px !important;
+    grid-gap: 8px !important;
+    height: 38px !important;
+}
+.font-search{
+	background-color: transparent !important;
+	color: #1D2939;
+	font-size: 14px;
+}
+.fs-results li:hover{
+	background-color: #FAFAFA !important;
+}
+.ci-sidebar-item .font-select .fs-results li.font-active{
+	background-color: #FAFAFA !important;
+	color: #632ceb !important;
+}
+.ci-sidebar-item .font-select .fs-results li.font-active:after{
+	content: '';
+	position: relative;
+	border: 1px solid #632ceb;
+	width: 12px;
+	height: 6px;
+	position: absolute;
+    border-top: 0pc;
+    border-right: 0px;
+    transform: rotate(-45deg);
+    left: 5px;
 }
